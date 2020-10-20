@@ -182,7 +182,7 @@ func FragfileLoadByte(data []byte) (*Fragfile, error) {
 }
 
 func FragfileLoadFile(filename string) (*Fragfile, error) {
-	data, err := ioutil.ReadFile("fragfile.dat")
+	data, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
